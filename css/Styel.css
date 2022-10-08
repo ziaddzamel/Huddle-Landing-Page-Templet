@@ -1,0 +1,265 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Outfit', sans-serif;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/*  Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+/* Start Header */
+header{
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-size: cover;
+  min-height: 100vh;
+  background-color: hsl(193, 100%, 96%);
+}
+header .container nav{
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container nav img{
+  width: 180px;
+
+}
+header .container nav a{
+  padding: 15px 70px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 40px;
+}
+header .container .landing{
+  display: flex;
+  padding: 70px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .container .landing {
+    flex-direction: column;
+  }
+}
+header .container .landing img{
+  width: 600px;
+  
+}
+.landing .text h1{
+  line-height: 1.5;
+  font-size: 40px;
+}
+.landing .text p{
+  margin: 20px auto;
+  margin-bottom: 60px;
+  font-size: 19px;
+}
+.landing .text a{
+  padding: 18px 60px;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .container .landing .text {
+    text-align: center;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .container .landing .text p {
+    font-size: 20px;
+  }
+}
+/* End Header */
+/* Start Mid-Page */
+.mid-page{
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+.mid-page .box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  border: 1px solid hsl(208deg 11% 55% / 15%) ;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+@media (max-width: 768px) {
+  .mid-page .box {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 768px) {
+  .mid-page .box:nth-child(2){
+    flex-direction: column;
+    
+  }
+}
+@media (max-width: 768px) {
+  .mid-page .box .text {
+    padding: 40px 0 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .mid-page .box .text p{
+    width: 310px;
+  }
+}
+.mid-page .box p ,.mid-page .box h2 {
+  padding-left: 50px;
+  line-height: 1.5;
+}
+.mid-page .box p {
+  padding-top: 15px;
+  font-size: 15px;
+  color: hsl(208, 11%, 55%);
+}
+/* End Mid-Page */
+/*Start Footer*/
+footer{
+  background-color: hsl(192, 100%, 9%);
+  position: relative;
+}
+footer .container{
+padding: 100px 0;
+}
+footer .lists{
+  display: flex;
+  justify-content: space-between;
+  color: hsl(193, 100%, 96%);
+  font-weight: lighter;
+}
+@media (max-width: 768px) {
+  footer img{
+    margin-left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  footer .lists {
+    flex-direction: column;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 768px) {
+  footer .lists .list-2{
+    padding: 30px 0;
+  }
+}
+@media (max-width: 768px) {
+  footer .lists .list-4{
+    margin-left: 180px;
+  }
+}
+footer img{
+  filter: brightness(0) invert(1);
+  padding: 40px 0 30px 0;
+}
+footer .lists ul li{
+  padding: 10px 0;
+}
+footer .lists .list-4{
+  display: flex;
+  padding-right: 150px;
+}
+footer .lists .list-1{
+  margin-left: 30px;
+  position: relative;
+}
+footer .lists .list-1:nth-child(1)::before{
+  content: url(../images/icon-location.svg);
+  position: absolute;
+  top: 15px;
+  left: -40px;
+}
+footer .lists .list-1 li:nth-child(2)::before{
+  content: url(../images/icon-phone.svg);
+  position: absolute;
+  top: 85px;
+  left: -40px;
+}
+footer .lists .list-1 li:nth-child(3)::before{
+  content: url(../images/icon-email.svg);
+  position: absolute;
+  top: 125px;
+  left: -40px;
+}
+footer .lists .list-4 li i{
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.card{
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  top: -130px;
+  left: 27%;
+  text-align: center;
+  border: 1px solid hsl(208deg 11% 55% / 15%) ;
+  border-radius: 12px;
+}
+@media (max-width: 768px) {
+  .card{
+    left: 70px;
+  }
+}
+.card .text{
+  padding: 50px 120px;
+}
+@media (max-width: 768px) {
+  .card .text{
+    padding: 50px 30px;
+  }
+}
+.card .text h2{
+  padding-bottom: 45px;
+  font-size: 25px;
+  
+}
+.card .text a{
+  padding: 18px 60px;
+  background-color: hsl(322, 100%, 66%);
+  color: white; 
+  text-decoration: none;
+  border-radius: 40px;
+  font-size: 15px;
+}
+/*End Footer*/
